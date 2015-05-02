@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="Ajouter un test unitaire" enabled="true" name="newTU">${:import(org.junit.Test)} @Test&#13;
+public void test${newName}() throws Exception {&#13;
+	&#13;
+}&#13;
+&#13;
+</template></templates>
