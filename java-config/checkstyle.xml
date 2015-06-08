@@ -22,7 +22,6 @@
     </module>
     <module name="JavadocStyle"/>
     <module name="JavadocType"/>
-    <module name="JavadocVariable"/>
     <module name="LocalFinalVariableName"/>
     <module name="LocalVariableName"/>
     <module name="MemberName"/>
@@ -80,15 +79,26 @@
     <module name="FinalParameters"/>
     <module name="TodoComment">
       <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
     </module>
     <module name="UpperEll"/>
+    <module name="NoWhitespaceAfter">
+      <property name="tokens" value="ARRAY_INIT,BNOT,DEC,DOT,INC,LNOT,UNARY_MINUS,UNARY_PLUS"/>
+    </module>
+    <module name="JavadocVariable">
+      <property name="scope" value="protected"/>
+    </module>
   </module>
-  <module name="JavadocPackage"/>
+  <module name="JavadocPackage">
+    <property name="severity" value="ignore"/>
+    <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+  </module>
   <module name="FileLength">
     <property name="max" value="200"/>
   </module>
   <module name="FileTabCharacter">
     <property name="severity" value="ignore"/>
+    <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
   </module>
   <module name="RegexpSingleline">
     <property name="severity" value="ignore"/>
@@ -96,6 +106,7 @@
   </module>
   <module name="NewlineAtEndOfFile">
     <property name="severity" value="ignore"/>
+    <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
   </module>
   <module name="Translation"/>
 </module>
